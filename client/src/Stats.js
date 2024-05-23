@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Stats({ items }) {
     if (!items.length)
-      return <em className="stats"> Start adding items to your kit</em>;
+      return <em className="stats"> 🕶️ Start adding items to your kit 👟</em>;
     const len = items.length;
     const pack = items.filter((item) => item.packed).length;
     const per = Math.round((pack * 100) / len);
@@ -16,7 +16,7 @@ export default function Stats({ items }) {
             </div>
           </em>
         ) : (
-          <em>Hurrah !!! You are done packing. Get Set GO</em>
+          <em>🌍 Hurray !!! You are done packing. Get Set Go ✈️</em>
         )}
       </footer>
     );
